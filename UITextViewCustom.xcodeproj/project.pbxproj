@@ -13,6 +13,7 @@
 		6C481B0C1EA2A1870066CE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C481B0A1EA2A1870066CE10 /* Main.storyboard */; };
 		6C481B0E1EA2A1870066CE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C481B0D1EA2A1870066CE10 /* Assets.xcassets */; };
 		6C481B111EA2A1870066CE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C481B0F1EA2A1870066CE10 /* LaunchScreen.storyboard */; };
+		6C481B1A1EA2A1F80066CE10 /* TextViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C481B191EA2A1F80066CE10 /* TextViewCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6C481B0D1EA2A1870066CE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C481B101EA2A1870066CE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C481B121EA2A1870066CE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C481B181EA2A1F80066CE10 /* TextViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCustom.h; sourceTree = "<group>"; };
+		6C481B191EA2A1F80066CE10 /* TextViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCustom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				6C481B0F1EA2A1870066CE10 /* LaunchScreen.storyboard */,
 				6C481B121EA2A1870066CE10 /* Info.plist */,
 				6C481B011EA2A1870066CE10 /* Supporting Files */,
+				6C481B181EA2A1F80066CE10 /* TextViewCustom.h */,
+				6C481B191EA2A1F80066CE10 /* TextViewCustom.m */,
 			);
 			path = UITextViewCustom;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			files = (
 				6C481B091EA2A1870066CE10 /* ViewController.m in Sources */,
 				6C481B061EA2A1870066CE10 /* AppDelegate.m in Sources */,
+				6C481B1A1EA2A1F80066CE10 /* TextViewCustom.m in Sources */,
 				6C481B031EA2A1870066CE10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
