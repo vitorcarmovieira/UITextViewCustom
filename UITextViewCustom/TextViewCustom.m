@@ -26,11 +26,16 @@
         [self setPlaceholderColor:[UIColor lightGrayColor]];
     }
     
+    if (!self.borderColor) {
+        [self setBorderColor:[UIColor lightGrayColor]];
+    }
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
 }
 
 - (void)drawRect:(CGRect)rect
 {
+    //coloca o placeholder no componente
     if( [[self placeholder] length] > 0 )
     {
         if (_placeHolderLabel == nil )
@@ -55,6 +60,16 @@
     {
         [[self viewWithTag:999] setAlpha:1];
     }
+    
+    //coloca a borda no componente
+    self.layer.borderWidth = 1;
+    self.layer.cornerRadius = 5;
+    self.layer.borderColor = self.borderColor.CGColor;
+    
+    //alinha o texto com o placeholder
+    UIEdgeInsets ei = self.textContainerInset;
+    ei.left = 5;
+    [self setTextContainerInset:ei];
     
     [super drawRect:rect];
 }
